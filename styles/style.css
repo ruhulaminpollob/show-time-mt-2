@@ -260,8 +260,10 @@ main {
 }
 
 .sponsor-logo {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
     gap: 100px;
     margin: 100px auto;
 }
@@ -359,7 +361,7 @@ input[type="submit"] {
 
 /* footer section  */
 footer {
-    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
 
 }
@@ -477,9 +479,11 @@ footer .copyright {
     }
 
     .sponsor-logo {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         padding: 0 10px;
+
     }
 
     .sponsor-logo a img {
