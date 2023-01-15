@@ -175,7 +175,7 @@ main {
 }
 
 .mini-content {
-    padding: 30px;
+    padding: 10px 30px;
 }
 
 .mini-content-title {
@@ -213,6 +213,7 @@ main {
 /* fact section  */
 .fact-article {
     max-width: 400px;
+    margin-left: 10px;
 }
 
 .fact-title {
