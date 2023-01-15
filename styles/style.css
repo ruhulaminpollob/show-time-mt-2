@@ -522,6 +522,10 @@ footer .copyright {
         width: 80%;
     }
 
+    .send-message h2 {
+        font-size: 30px;
+    }
+
     /* footer  */
     footer {
         width: auto;
