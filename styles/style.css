@@ -184,11 +184,11 @@ main {
     margin-bottom: 10px;
 }
 
-.feature-2-banner {
+.feature-banner {
     width: 50%;
 }
 
-.feature-2-banner img {
+.feature-banner img {
     width: 100%;
 }
 
@@ -289,19 +289,29 @@ main {
     text-align: center;
     margin-bottom: 40px;
 
+
 }
+
 
 .contact-us-title {
     font-weight: 700;
     font-size: 45px;
+    color: #FFFFFF;
+}
+
+.contact p,
+.info-name h1,
+.contact-us p {
+    color: #FFFFFF;
 }
 
 .info-msg {
     display: flex;
     gap: 50px;
+
 }
 
-.location {
+.info {
     width: 50%;
 }
 
@@ -438,10 +448,8 @@ footer .copyright {
         padding: 10px 20px;
     }
 
-    .feature-2-banner {}
-
-    .feature-banner img {
-        width: 350px;
+    .feature-banner {
+        width: 100%;
     }
 
     .btn-second {
@@ -484,7 +492,7 @@ footer .copyright {
 
     /* contact us section  */
     .contact {
-        background: var(--bg-color);
+        background-color: var(--dark-3);
         border-radius: 5px;
         margin-bottom: 100px;
     }
