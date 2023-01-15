@@ -253,7 +253,7 @@ main {
 
 /* contact us section  */
 .contact {
-    background-image: linear-gradient(black, black), url(/images/banner.png);
+    background-image: linear-gradient(black, black), url(./images/banner.png);
 
     background-position: center;
     border-radius: 20px;
