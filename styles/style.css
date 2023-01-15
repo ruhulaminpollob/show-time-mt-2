@@ -273,7 +273,7 @@ main {
 
 /* contact us section  */
 .contact {
-    background-image: linear-gradient(black, black), url(/images/banner.png);
+    background-image: linear-gradient(black, black), url(../images/banner.png);
 
     background-position: center;
     border-radius: 20px;
@@ -438,12 +438,11 @@ footer .copyright {
         padding: 10px 20px;
     }
 
-    .feature-2-banner {
-        width: 100%;
+    .feature-2-banner {}
 
+    .feature-banner img {
+        width: 350px;
     }
-
-    .feature-2-banner img {}
 
     .btn-second {
         padding: 20px;
