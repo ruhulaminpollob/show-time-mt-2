@@ -357,10 +357,6 @@ input[type="submit"] {
     padding: 20px 25px;
 }
 
-
-
-
-
 /* footer section  */
 footer {
     width: 1250px;
@@ -537,8 +533,4 @@ footer .copyright {
         margin-bottom: 50px;
     }
 
-}
-
-.hide {
-    display: none;
 }
