@@ -22,6 +22,7 @@ variables
 body {
     background-color: #FFFFFF;
 
+
 }
 
 h1,
@@ -68,6 +69,14 @@ nav ul {
 nav li a {
     text-decoration: none;
     color: var(--dark-2);
+    padding: 20px 25px;
+    border-radius: 5px;
+}
+
+nav li a:hover {
+    background-color: var(--third-color);
+    text-shadow: 4px 4px 8px #FFFFFF;
+    color: #FFFFFF;
 }
 
 .head-section {
@@ -214,16 +223,26 @@ main {
 
 .fact-containers {
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
     margin: 50px;
-    gap: 124px;
+    gap: 30px;
+
 }
 
 .fact-container {
+    background-color: #FFFFFF;
     border: 0.5px solid var(--third-color);
     border-radius: 10px;
     text-align: center;
     padding: 40px 35px;
+
+}
+
+.fact-container:hover {
+    position: relative;
+    transform: scale(130%);
+    box-shadow: 4px 4px 12px gray;
 }
 
 /* sponsors section  */
@@ -248,12 +267,13 @@ main {
 }
 
 .sponsor-logo a img {
+    width: 100px;
     filter: grayscale(1);
 }
 
 /* contact us section  */
 .contact {
-    background-image: linear-gradient(black, black), url(./images/banner.png);
+    background-image: linear-gradient(black, black), url(/images/banner.png);
 
     background-position: center;
     border-radius: 20px;
@@ -262,11 +282,13 @@ main {
     margin-bottom: 100px;
     background-blend-mode: saturation;
 
+
 }
 
 .contact-us {
     text-align: center;
     margin-bottom: 40px;
+
 }
 
 .contact-us-title {
@@ -342,4 +364,170 @@ footer .copyright {
     padding: 30px;
     margin-bottom: 200px;
 
+}
+
+@media screen and (max-width:577px) {
+
+    /* header section styles
+------------------------- */
+    .head-container {
+        padding: 20px;
+    }
+
+    /* head and navbar styles*/
+    .brand-name {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-title {
+        font-size: 35px;
+    }
+
+    /* features section  */
+
+    .features-1 {
+
+        flex-direction: column;
+        gap: 70px;
+        margin: 30px;
+    }
+
+    .img-features {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        width: 100%;
+        gap: 24px;
+    }
+
+    .img-features img {
+        width: 100%;
+    }
+
+    .feature-1-content {
+        width: 100%;
+    }
+
+    /* feature 2 */
+    .features-2 {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .feature-2-content {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .head-content-title {
+        font-size: 30px;
+        padding-left: 30px;
+    }
+
+    .mini-content {
+        padding: 10px 20px;
+    }
+
+    .feature-2-banner {
+        width: 100%;
+
+    }
+
+    .feature-2-banner img {}
+
+    .btn-second {
+        padding: 20px;
+        bottom: 150px;
+        left: 50px;
+    }
+
+    .btn-span {
+        font-size: 50px;
+    }
+
+    /* fact section 
+    -------------- */
+    .fact-containers {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px;
+        gap: 10px;
+    }
+
+    .fact-article {
+        max-width: 400px;
+        margin: 40px 30px;
+    }
+
+    /* sponsors section  */
+    .sponsors article {
+        padding: 0 20px;
+    }
+
+    .sponsor-logo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 0 10px;
+    }
+
+    .sponsor-logo a img {
+        filter: grayscale(1);
+    }
+
+    /* contact us section  */
+    .contact {
+        background: var(--bg-color);
+        border-radius: 5px;
+        margin-bottom: 100px;
+    }
+
+    .contact-us {
+        text-align: center;
+        margin-bottom: 40px;
+
+    }
+
+    .contact-us-title {
+        font-weight: 700;
+        font-size: 45px;
+    }
+
+    .info-msg {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .send-message {
+        width: 80%;
+    }
+
+    /* footer  */
+    footer {
+        width: auto;
+        margin: 0 auto;
+
+    }
+
+    footer .copyright {
+        margin-bottom: 50px;
+    }
+
+}
+
+.hide {
+    display: none;
 }
